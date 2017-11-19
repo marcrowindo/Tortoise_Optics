@@ -26,14 +26,14 @@ a {
   text-decoration: none;
 }
 
+p {
+  line-height: 1.4;
+}
+
 .main {
   display: flex;
   flex-flow: column;
   align-items: center;
-}
-
-p {
-  line-height: 1.4;
 }
 
 /* MAIN BANNER */
@@ -50,7 +50,7 @@ p {
 }
 
 .header {
-  position: -webkit-sticky;
+  position: -webkit- sticky;
   position: sticky;
   top: 0;
   z-index: 5;
@@ -79,6 +79,13 @@ nav ul li {
   color: white;
 }
 
+.mobile-navigation {
+  display: none;
+  padding-right: 2rem;
+  color: white;
+  margin: 1rem 0;
+}
+
 .logo img{
   height: 1.5rem;
   margin-left: 2rem;
@@ -94,7 +101,7 @@ nav ul li {
 }
 
 .slogan {
-  margin-top: 8rem;
+  margin-top: 10rem;
   padding: 1.5rem 5rem;
   background-color: white;
 }
@@ -161,3 +168,166 @@ nav ul li {
 .container-two .title h3 {
   padding: 0.5rem 1.25rem;
 }
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 5rem;
+  max-width: 996px;
+  width: 100%;
+  background-color: azure;
+}
+
+.footer img {
+  height: 1.5rem;
+  padding-right: 1rem;
+  padding-left: 4rem;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1200px) {
+
+  .banner {
+    background-position: 35% 0%;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+
+  .banner {
+    height: 22rem;
+  }
+
+  .header {
+    margin-top: 0;
+  }
+
+  .slogan {
+    padding: 0.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+  h1 {
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+
+  .logo span {
+    display: none;
+  }
+
+
+  .navigation {
+    display: none;
+  }
+
+  .mobile-navigation {
+    display: block;
+  }
+
+  .banner {
+    height: 17rem;
+  }
+
+  .slogan-container {
+    justify-content: center;
+    max-width: none;
+  }
+
+  .slogan {
+    padding: 1rem 0rem;
+    width: 100%;
+    margin-top: 9rem;
+    margin-right: 0rem;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.77rem;
+  }
+
+  .container-one {
+    flex-direction: column;
+    margin-top: 3.77rem;
+  }
+
+  .container-one .two {
+    margin-top: 1.54rem;
+    height: 5.25rem;
+  }
+
+  .container-one .three {
+    margin-top: 1.54rem;
+    height: 4.5rem;
+  }
+
+  .explanation span {
+    font-size: 0.77rem;
+  }
+
+  .container-two {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.77rem;
+  }
+
+  .container-philosophy {
+    margin-right: 0;
+    width: 100%
+  }
+
+  .container-appointments {
+    margin-top: 4rem;
+    margin-left: 0;
+    width: 100%
+  }
+
+  .description p{
+    margin: 0rem 0.5rem;
+  }
+
+  .container-two .title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer span {
+    display: none;
+  }
+}  
+
+
+@media only screen and (max-width: 540px) {
+
+  .banner {
+    background-position: 20% 0%;
+  }
+
+
+}
+
+
+
+
+
+
+
+
